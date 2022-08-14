@@ -1,0 +1,36 @@
+@media screen and (max-width:860px){
+    header{
+        height: 20rem;
+    }
+    .header-image{
+        display: none;
+    }
+    .api{
+        margin: 7rem 1rem;
+    }
+    .blog-cards{
+        margin: 3rem 1rem;
+    }
+    .blog-card{
+        width: 75vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .blog-content{
+        justify-self: center;
+    }
+    .faq-image img{
+        display: none;
+    }
+    .download-section{
+        margin: 3rem 1rem;
+    }
+    .download-email form input{
+        width: 30%;
+        border: 2px solid;
+    }
+    .footer-section{
+        height: 35vh;
+    }
+}

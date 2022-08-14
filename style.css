@@ -1,43 +1,51 @@
 /* POPPINS FONT FAMILY */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
 * {
   font-family: "Poppins", sans-serif;
-
 }
 /* Header  */
+body{
+  border: 2px solid;
+}
 header{
-  border: 2px solid ;
+  border: 2px solid green;
   background-color: #3400FF;
   height: 40vh;
 }
 nav{
-  position: absolute;
-  right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 /* navbar items  */
 .nav-item{
   color: #ffffff;
   padding: 0px 10px;
-  margin-top: 4px;
-
+  cursor: pointer;
 }
 /* nav button */
 .nav-item-active{
   background-color: #ffffff;
   border-radius: 5px;
   padding: 5px 5px;
+  cursor: pointer;
 }
+/* Search svg */
 .nav-item:last-child{
   position: relative;
   top: 6px;
   width: 20px;
-  height: 20px;
+  height: 25px;
+  cursor:pointer;
 }
+/* navbar logo */
 .logo{
   margin: 20px 0px 20px 20px;
   height: 30px;
+  cursor: pointer;
+  flex: 1;
 }
 .header-text{
   color: #ffffff;
@@ -47,7 +55,7 @@ nav{
 .header-image{
   position: absolute;
   right: 10px;
-  top: 10%;
+  top: 12%;
   width: 400px;
   height: 350px;
 }
@@ -62,7 +70,7 @@ nav{
   padding: 0px 15px;
 }
 .api{
-  margin: 70px 50px 20px 50px;
+  margin: 7rem 0 0 3rem;
 }
 .api-heading{
   font-size: 24px;
@@ -70,11 +78,11 @@ nav{
 .cards{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card-active{
   padding: 20px 90px 10px 20px;
   box-shadow: 2px 2px 15px 15px #0000004d;
-
 }
 .card-head-active{
   color: #5A31FC;
@@ -89,37 +97,38 @@ nav{
 .card-head{
   font-size: 14px;
 }
+/* Blog Cards  */
 .blog-heading{
   font-size: 12px;
-  margin: 70px 50px 20px 50px;
-
+  margin: 3rem;
 }
 .blog-cards{
   display: flex;
-  margin: 50px;
-  gap: 80px;
-  margin-right: 100px;
+  flex-wrap: wrap;
+  margin: 3rem 0 3rem 4rem;
+  gap: 4.5rem;
 }
 .blog-card{
   display: flex;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 7px 7px 5px 2px #0000004d ;
-  flex: 3;
+  padding-right: 6%;
 }
 /* content of blog */
+.blog-image img{
+  height: 45vh;
+}
 .blog-content{
-  position: relative;
-  float: left;
-  left: 120px;
-  top: 5px;
-  font-size: 14px;
-  padding-left: 50px;
-  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5rem;
 }
 .blog-bottom{
-  position: relative;
-  right: 145px;
-  top: 12px;
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .blog-card-bottom-image{
   height: 40px;
@@ -127,14 +136,12 @@ nav{
 }
 /* author name */
 .blog-author{
-  position: relative;
-  font-size: 10px;
-  right: 135px;
-  top: 12px;
+  font-size: 14px;
 }
+/* FAQ Section */
 .faq-section{
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   gap: 20%;
   background-color: #e8f2f1f3;
 }
@@ -142,7 +149,7 @@ nav{
   margin: 0 50px;
 }
 .faq-content h4{
-  font-size: 12px;
+  font-size: 10px;
 }
 .faq-content button{
   border: none;
@@ -152,8 +159,8 @@ nav{
   font-size: 12px;
 }
 .faq-image{
-  position: relative;
-  left: 220px;
+  position: absolute;
+  right: 10px;
 }
 .faq-image img{
   width: 400px;
@@ -162,54 +169,49 @@ nav{
 /* download Section Starts here */
 .download-section{
   display: flex;
-  margin: 0 0 0 50px;
+  margin: 3rem 0 0 50px;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .download-content span{
   font-size: 24px;
 }
 .download-email{
-  padding: 30px 50px;
-}
-.download-email form{
-  border: 3px solid;
-  position: relative;
-  margin: 2px 0;
-  border-radius:20px; 
-  
+  display: flex;
 }
 .download-email form input{
-  margin: 2px 80px;
   border-radius: 20px;
   border: none;
+  padding: 5px 10rem 5px 1rem;
+  width: 11rem;
 }
 .download-email form button{
   border: none;
   color: #ffffff;
   background-color: #5A31FC;
-  border-radius: 12px;
-  padding: 2px 10px;
+  border-radius: 20px;
+  padding: 7px 25px;
   margin-right: 1px;
 }
-
 /* Footer Starts Here */
 .footer-section{
   display: flex;
   background-color: #3400FF;
   color: #ffffff;
-  height: 12vh;
+  height: 15vh;
   position: relative;
   bottom: 0;
-  width: 100%;
-  font-size: 12px;
+  font-size: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid red;
 }
 .list{
-  position: relative;
   display: flex;
-  right: 6px;
+  flex-wrap: wrap;
 }
 .list-items{
-  text-decoration: none;
   list-style: none;
   padding: 0 20px;
 }
@@ -217,20 +219,23 @@ nav{
   height: 20px;
   margin: 10px 0 0 50px;
 }
-.footer-right{
-  position: absolute;
+.footer-right-side{
   display: flex;
-  left: 81%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer-right{
+  padding: 1rem 2rem 0rem;
 }
 .footer-logos{
-  position: relative;
-  padding: 3px 5px;
-  margin-left: 27px;
-  margin-top: 10px;
+  padding: 0 0.7rem;
+  cursor: pointer;
 }
 .logos-list{
   display: flex;
-  position: absolute;
-  top: 45px;
-  left: -22px;
+  flex-wrap: wrap;
+}
+.footer-list-items{
+  list-style: none;
+  padding: 0 0.5rem;
 }
